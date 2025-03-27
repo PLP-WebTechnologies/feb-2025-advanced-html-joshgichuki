@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        button {
+            color: darkslategrey;
+            cursor: pointer;
+        }
+        h1 {
+            color: rgb(51, 167, 167);
+        }
+    </style>
+</head>
+<body background="">
+    <h1 style="text-align: center;">Become a photographer with us today</h1>
+    <!-- Ordered List with Roman Numerals -->
+    <ol type="I">
+        <li>sample photos</li>
+        <li>Contacts</li>
+        <li>Registration</li>
+    </ol>
+
+    <!-- External Image and Video -->
+    <h1>sample Image and Video</h1>
+    <div style="display: flex; align-items: center; gap: 20px;">
+        <!-- Image -->
+        <img src="https://images.pexels.com/photos/31049332/pexels-photo-31049332/free-photo-of-minimalist-palm-tree-with-afternoon-shadows.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Sample Image from Pexels" width="600">
+
+        <!-- Video -->
+        <video width="600" controls>
+            <source src="https://videos.pexels.com/video-files/30985846/13246013_360_640_60fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.   
+        </video>
+    </div>
+
+    <!-- Table of Contacts -->
+    <h1>Contacts</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 mombasa</td>
+                <td>+1234567890</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Eldoret</td>
+                <td>+9876543210</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>789 nairobi </td>
+                <td>+1122334455</td>
+                <td>bob.johnson@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice Brown</td>
+                <td>321 nyeri</td>
+                <td>+6677889900</td>
+                <td>alice.brown@example.com</td>
+            </tr>
+            <tr>
+                <td>Charlie White</td>
+                <td>654 kenya</td>
+                <td>+4455667788</td>
+                <td>charlie.white@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <!-- Registration Form -->
+    <h1>Registration Today and starst your journey</h1>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+        <br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">KENYA</option>
+            <option value="uk">nigeria</option>
+            <option value="canada">south africa</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <br><br>
+    
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
